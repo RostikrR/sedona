@@ -1,0 +1,72 @@
+// author - DEV-Penguin-DEV[https://github.com/DEV-Penguin-DEV]
+// !!!!!!!!!!!!!!!!!
+
+@mixin wrapper($padding, $width: 100vw, $max-width: 100vw) {
+    padding: 0 $padding;
+    width: calc($width - ($padding * 2));
+    margin: 0 auto;
+    max-width: calc($max-width - ($padding * 2));
+  }
+  
+  @mixin default-pseudo-element($width, $height: $width) {
+    content: '';
+    position: absolute;
+    width: $width;
+    height: $height;
+  }
+  
+  @mixin centering-absolute-element() {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @mixin centering-vertical-absolute-element() {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  @mixin centering-horizontal-absolute-element() {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  @mixin triangle(
+    $width: 15px,
+    $height: 15px,
+    $direction: 'down',
+    $border-color: #333333,
+    $border-type: solid
+  ) {
+    width: 0;
+    height: 0;
+    background: none;
+  
+    $first-border: calc($width / 2) $border-type transparent;
+    $second-border: $height $border-type $border-color;
+  
+    @if $direction == 'up' or $direction == 'down' {
+      border-left: $first-border;
+      border-right: $first-border;
+    } @else {
+      border-top: $first-border;
+      border-bottom: $first-border;
+    }
+
+    @if $direction == 'up' {
+      border-bottom: $second-border;
+    } @else if $direction == 'left' {
+      border-right: $second-border;
+    } @else if $direction == 'right' {
+      border-left: $second-border;
+    } @else {
+      border-top: $second-border;
+    }
+  }
+  
+  @mixin grid-template-columns($count, $width: 100%, $gap: 0px) {
+    grid-template-columns: repeat(
+      $count,
+      calc(($width - $gap * ($count - 1)) / $count)
+    );
+  }

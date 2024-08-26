@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  font-family: "PT Sans";
+}
+html {
+  scroll-behavior: smooth;
+}
+button {
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+body {
+  font-weight: 400;
+  font-style: normal;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

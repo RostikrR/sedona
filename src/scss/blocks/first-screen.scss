@@ -1,0 +1,30 @@
+.first-screen__image{
+    width: 100%;
+    margin-bottom: 60px;
+}
+.first-screen__title{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 21px;
+    text-transform: uppercase;
+    width: 483px;
+    margin-bottom: 21px;
+    @media (max-width:500px) {
+        font-size: 18px;
+        max-width: 280px;
+        margin: 0 auto;
+        margin-bottom: 21px;
+    }
+}
+.first-screen__text{
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    @media (max-width: 500px) {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+}
+.first-screen{
+    margin-bottom: 45px;
+}

@@ -1,0 +1,32 @@
+.contact {
+  padding-top: 60px;
+}
+.contact__container {
+  text-align: center;
+//   display: flex;
+//   justify-content: center;
+//   flex-direction: column;
+}
+.contact__title {
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  font-size: 30px;
+}
+.contact__text {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 45px;
+//   max-width: 460px;
+@media (max-width:600px) {
+  padding: 0 20px;
+}
+}
+.contact__button {
+  text-transform: uppercase;
+  font-size: 21px;
+  background-color: #81B3D2;
+  color: #FFFFFF;
+  border: none;
+  padding: 15px 120px;
+  margin-bottom: 70px;
+}
