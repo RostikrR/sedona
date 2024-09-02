@@ -1,0 +1,2 @@
+!function(){"use strict";(()=>{const e=document.querySelector(".main-header__open"),t=document.querySelector(".main-header__list"),n=document.querySelector(".main-header__close-button");e.addEventListener("click",(()=>{t.classList.add("open")})),n.addEventListener("click",(()=>{t.classList.remove("open")}))})()}();
+//# sourceMappingURL=main.js.map

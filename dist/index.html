@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <img src="images/logo.svg" class="main-header__image" />
+      <button class="main-header__open">
+        <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
+          <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
+          <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
+          </svg>          
+        <span class="visually-hidden">Open</span>
+      </button>
+      <nav class="main-header__nav">
+        <ul class="main-header__list">
+          <button class="main-header__close-button">
+            <span class="visually-hidden">Close</span>
+            <svg
+              width="23"
+              height="23"
+              viewBox="0 0 23 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22.2 2.8L19.4 0L11.1 8.3L2.8 0L0 2.8L8.3 11.1L0 19.4L2.8 22.2L11.1 13.9L19.4 22.2L22.2 19.4L13.9 11.1L22.2 2.8Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+          <div class="main-header__container">
+            <li class="main-header__item">
+              <a href="" class="main-header__link">Главная</a>
+            </li>
+            <li class="main-header__item">
+              <a href="" class="main-header__link">Фото и видео</a>
+            </li>
+          </div>
+          <div class="main-header__container">
+            <li class="main-header__item">
+              <a href="" class="main-header__link">Форма отзыва</a>
+            </li>
+            <li class="main-header__item">
+              <a href="" class="main-header__link">Контакты</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="first-screen">
+        <picture>
+          <source media="(max-width: 600px)" srcset="images/Frame_7.jpg" />
+          <source
+            media="(max-width: 800px)"
+            srcset="images/Intro__tablet.jpg"
+          />
+          <img src="images/intro.jpg" class="first-screen__image" />
+        </picture>
+        <h1 class="first-screen__title">
+          СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!
+        </h1>
+        <p class="first-screen__text">
+          Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+        </p>
+      </section>
+      <section class="benefits">
+        <ul class="benefits__list">
+          <li class="benefit benefit--cut">
+            <div class="benefit__container">
+              <div class="benefit__text-container">
+                <h2 class="benefit__title">НАСТОЯЩИЙ ГОРОДОК</h2>
+                <p class="benefit__text">— №1 —</p>
+                <p class="benefit__text">
+                  СЕДОНА не Аттракцион ДЛЯ ТУРИСТОВ, там ТЕЧЕТ СВОЯ ЖИЗНЬ
+                </p>
+              </div>
+              <picture>
+                <source
+                  media="(max-width: 600px)"
+                  srcset="images/Frame_4.jpg"
+                />
+                <source
+                  media="(max-width: 800px)"
+                  srcset="images/photo-city@1x__tablet.jpg"
+                />
+                <img src="images/photo-city@1x.jpg" class="benefit__image" />
+              </picture>
+            </div>
+            <ul class="inner-benefits">
+              <li class="inner-benefit">
+                <img
+                  src="images/icon-house.svg.svg"
+                  class="inner-benefit__image"
+                />
+                <div>
+                  <h3 class="inner-benefit__title">Жилье</h3>
+                  <p class="inner-benefit__text">
+                    Рекомендуем пожить в настоящем мотеле, все как в кино!
+                  </p>
+                </div>
+              </li>
+              <li class="inner-benefit">
+                <img
+                  src="images/icon-burger.svg.svg"
+                  class="inner-benefit__image"
+                />
+                <div>
+                  <h3 class="inner-benefit__title">ЕДА</h3>
+                  <p class="inner-benefit__text">
+                    Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!
+                  </p>
+                </div>
+              </li>
+              <li class="inner-benefit">
+                <img
+                  src="images/icon-gift.svg.svg"
+                  class="inner-benefit__image"
+                />
+                <div>
+                  <h3 class="inner-benefit__title">СУВЕНИРЫ</h3>
+                  <p class="inner-benefit__text">
+                    Не только китайского, но и местного производства!
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="benefit">
+            <div class="benefit__container benefit__container--second">
+              <picture>
+                <source
+                  media="(max-width: 600px)"
+                  srcset="images/Group_6.jpg"
+                />
+                <source
+                  media="(max-width: 800px)"
+                  srcset="images/photo-bridge@1x__tablet.jpg"
+                />
+                <img src="images/photo-bridge@1x.jpg" class="benefit__image" />
+              </picture>
+              <div class="benefit__text-container">
+                <h2 class="benefit__title">ТАМ ЕСТЬ Мост дьявола</h2>
+                <p class="benefit__text">— №2 —</p>
+                <p class="benefit__text">
+                  Да, по нему можно пройти! Если вы осмелитесь, конечно
+                </p>
+              </div>
+            </div>
+          </li>
+          <div class="gray-benefit">
+            <li class="benefit">
+              <div class="benefit__text-container">
+                <h2 class="benefit__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h2>
+                <p class="benefit__text">— №3 —</p>
+                <p class="benefit__text">
+                  ВСЕ интересные места находятся очень близко
+                </p>
+              </div>
+            </li>
+            <li class="benefit">
+              <div class="benefit__text-container">
+                <h2 class="benefit__title">КРАСИВАЯ ДОРОГА</h2>
+                <p class="benefit__text">— №4 —</p>
+                <p class="benefit__text">
+                  ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!
+                </p>
+              </div>
+            </li>
+            <li class="benefit">
+              <div class="benefit__text-container">
+                <h2 class="benefit__title">МАЛО ТУРИСТОВ</h2>
+                <p class="benefit__text">— №5 —</p>
+                <p class="benefit__text">
+                  Большинство едет в гранд каньон и толпится там
+                </p>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </section>
+      <section class="contact">
+        <div class="contact__container">
+          <h2 class="contact__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+          <p class="contact__text">
+            Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+            предложения гостиниц в седоне
+          </p>
+          <button class="contact__button">НАЙТИ гостиницу</button>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2370304.521429246!2d-112.47342048963141!3d34.33446816345271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08ebcb4c186b%3A0x423927b17fc1cd71!2sArizona%2C%20USA!5e0!3m2!1sen!2spl!4v1713814486837!5m2!1sen!2spl"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <h2 class="main-footer__title">#visitSEDONA</h2>
+      <ul class="main-footer__list">
+        <li class="main-footer__item">
+          <a href="#" class="main-footer__link">
+            <img src="images/vk.svg" class="main-footer__image" />
+          </a>
+        </li>
+        <li class="main-footer__item">
+          <a href="#" class="main-footer__link">
+            <img src="images/telegram.svg" class="main-footer__image" />
+          </a>
+        </li>
+        <li class="main-footer__item">
+          <a href="#" class="main-footer__link">
+            <img src="images/youtube.svg" class="main-footer__image" />
+          </a>
+        </li>
+      </ul>
+      <div class="main-footer__container">
+        <p class="main-footer__text">Разработано</p>
+        <img src="images/Group.svg" class="main-footer__image" />
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
